@@ -1,4 +1,4 @@
-print('Olá, Mundo lindão')
+print('Olá, Mundo')
 
 
 
