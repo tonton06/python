@@ -1,5 +1,4 @@
-i = int(input('Inicial: '))
-f = int(input('Final: '))
+i = int(input('Valor inicial: '))
 p = int(input('Razão: '))
-for c in range(i, f + 1, p):
+for c in range(i, i + (10 * p), p):
     print(c)

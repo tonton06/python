@@ -1,9 +1,8 @@
-frase = str(input('Digite uma frase: ')).strip()
-join = frase.join
-for c in range(join, -1):
-    esarf = str(c).strip()
-print(frase)
-if frase == esarf:
-    print('Esta frase é um palíndromo!')
+frase = str(input('Digite uma frase: ')).strip().lower()
+join = frase.replace(' ', '')
+reverse = join[::-1]
+print('O inverso de {} é {}'.format(join, reverse))
+if join == reverse:
+    print('A frase digitada é um PALÍNDROMO')
 else:
-    print('Esta frase não é um palíndrmo')
+    print('A frase digitada não é um PALÍNDROMO')
