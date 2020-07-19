@@ -15,7 +15,10 @@ while True:
     sleep(2)
 
     print('='*50)
-    side = str(input('[IMPAR/PAR] [I/P] ')).strip().upper()[0]
+    side = ' '
+    while side not in 'PIÍ':
+        side = str(input('[IMPAR/PAR] [I/P] ')).strip().upper()[0]
+
     player = int(input('Digite seu número: '))
     print('='*50)
 

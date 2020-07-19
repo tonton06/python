@@ -3,15 +3,15 @@ from time import sleep
 count_age = count_sex = count_girl = 0
 
 while True:    
+    
     print('='*50)
     print('{:^50}'.format('CADASTRE UMA PESSOA'))
     print('='*50)
 
-    sex = '.'
-    while sex not in 'MF':
-        sex = str(input('sexo: [M/F] ')).strip().capitalize()[0]
-    
     age = int(input('Idade: '))
+    sex = ' '
+    while sex not in 'MF':
+        sex = str(input('sexo: [M/F] ')).strip().capitalize()[0]   
     print('='*50)
 
     if age > 18:
@@ -21,10 +21,10 @@ while True:
     if sex in 'F' and age < 20:
         count_girl += 1
 
-    choice = -1
-    while choice != '1' and choice != '0':
-        choice = str(input('[ 1 ] Continuar | [ 0 ] Sair : '))
-    if choice == '0':
+    choice = ' '
+    while choice not in 'SN':
+        choice = str(input('Continuar? [S/N] ')).strip().upper()[0]
+    if choice == 'N':
         break
 
 print('='*50)

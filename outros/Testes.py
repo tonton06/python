@@ -1,15 +1,10 @@
-#factorial
+def soma(value_1, value_2):
+    value_1 = 0
+    value_2 = 0
+    return value_1 + value_2
 
-num = int(input('Digite um número inteiro: '))
-print('{}! = '.format(num), end='')
-calc = println = num
+soma = soma(value_1, value_2)
 
-for count in range(num, 0, -1):
-    
-    if count == 1:
-        print('{}'.format(println), end='')
-    elif count > 1:
-        print('{} x '.format(println), end='')
-    calc *= count
-    println -= 1
-print(' = {}'.format(calc))
+value_1 = 12
+value_2 = 11
+print(soma)
