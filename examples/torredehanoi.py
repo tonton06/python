@@ -14,7 +14,7 @@ def carregar(n):
         lista.append(c)
     return lista
 
-disk = 15
+disk = 25
 
 origem = carregar(disk)
 destino = []

@@ -1,50 +1,59 @@
-# lanche = ['cachorro', 'gato', 'galo']
-# print(lanche)
+# # modifie
 
-# lanche.append('Cocrodilo')
-# print(lanche)
+num = [1, 2, 3]
+num[2] = 1
+print
 
-# lanche.insert(1, 'Golira')
-# print(lanche)
+# # add
 
-# del lanche[1]
-# print(lanche)
+animais = ['cachorro', 'gato', 'galo']
+animais.append('Leão')
+animais.insert(0, 'Jaguatirica')
 
-# lanche.pop(0)
-# print(lanche)
+# # remove
 
-# lanche.remove('gato')
-# print(lanche)
+animais.pop()
+del animais[2]
+lanche.remove('cachorro')
 
-#===================================#
+# # verification
 
-# if 'Golira' in lanche:
-#     lanche.remove('Golira')
+if 'cachorro' in animais:
+    animais.remove('cachorro')
 
-# valores = [8, 2, 3, 6, 2, 9]
-# print(valores)
+# function list
 
-# valores.sort()
-# print(valores)
+values = list(range(1, 11))
 
-# valores.sort(reverse=True)
-# print(valores)
+# # sorting
 
-# len(valores)
-# print(valores)
+values = [1, 2, 5, 4, 9, 8, 10]
+values.sort()
+valores.sort(reverse=True)
 
-# num = [1, 3, 5, 2, 8]
-# for pos, valores in enumerate(num):
-#     print(f'Posição {pos + 1} num {valores}')
+# # counting
+
+values = [1, 2, 5, 4, 9, 8, 10]
+len(values)
+
+# input
+
+valores = []
+valores.append(int(input('Digite um número: ')))
+print(valores)
+
+# for
+
+values = [2, 4, 6, 8, 10, 12]
+for position, value in enumerate(values):
+    print(f'Na posição {position} encontrei o valor {value}')
+
+# python only
 
 a = [1, 2, 3, 4]
 b = a
-b.append(5)
-print(f'Lista 1 = {a}')
-print(f'Lista 2 = {b}')
+
+!=!=!=!=!=!=!=!=
 
 a = [1, 2, 3, 4]
 b = a[:]
-b.append(5)
-print(f'Lista 1b {a}')
-print(f'Lista 2b {b}')
